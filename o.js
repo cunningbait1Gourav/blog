@@ -14,7 +14,7 @@ this.pic=pic;
 const gourav= new Card(
 "GOURAV",
 "Front end Barbarian",
-"gourav.jpg",
+"gourav.JPG",
 )
 const shweta= new Card(
 	"SHWETA","ANIMATOR","shweta.jpeg")
