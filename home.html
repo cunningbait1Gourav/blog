@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>
+		home
+	</title>
+	<style>
+		  .h
+	{
+	display:none;
+	}
+
+	.move
+{
+	display:inline-block;
+	transform: translateX(2.5rem) translateY(5rem);
+	height:20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius:20px;
+	width:150px;
+}
+.move2
+{
+	display:inline-block;
+	transform: translateY(5rem);
+	height:40px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius:20px;
+	width:70px;
+}
+.slider{
+background: #e6e6e6;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+transform: translateY(100%);
+}
+.landing
+{
+min-height:100vh;
+padding:0rem 5rem;
+}
+.intro{
+background:black;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.intro-text
+{
+font-size:2rem;
+
+}
+.hide
+{
+background:black;
+overflow:hidden;
+}
+.hide span
+{
+display:inline-block;
+transform:translateY(100%);
+}
+			
+			@media screen and (min-width:500px)
+		{
+			 .h
+	{
+	display:inline-block;
+	}
+	.move
+	{
+	transform: translateX(11rem) translateY(15rem);
+	border-top-left-radius: 35px;
+	border-bottom-left-radius:35px;
+	height:50px;
+	width:500px;
+	}
+	.move2
+	{
+	transform: translateX(11rem) translateY(15rem);
+	border-top-right-radius: 35px;
+	border-bottom-right-radius:35px;
+	height:70px;
+	width:70px;
+	}
+
+		}
+
+		@media screen and (min-width:1000px)
+		{
+			 .h
+	{
+	display:inline-block;
+	}
+	.move
+	{
+	transform: translateX(18rem) translateY(15rem);
+	                        
+	border-top-left-radius: 35px;
+	border-bottom-left-radius:35px;
+	height:50px;
+	width:500px;
+	}
+	.move2
+	{
+	transform: translateX(18rem) translateY(15rem);
+	border-top-right-radius: 35px;
+	border-bottom-right-radius:35px;
+	height:70px;
+	width:70px;
+	}
+
+		}
+		main ul
+   {
+   margin:0px;
+   padding:0px;
+   }
+
+   
+  main ul li
+   {
+   display:inline-block;
+   list-style:none;
+   padding:10px;
+   vertical-align:top;
+   height:16px;
+   
+   }
+   main a
+   {
+   color:#ccfff2;
+   }
+   main h1
+{
+font-size:1rem;
+}
+main h2
+{
+font-size:0.75rem;
+}
+*{
+color:white;
+margin:0px;
+padding:0px;
+}
+	
+
+	</style>
+</head>
+<body style="background-color: #10000e">
+	<main>
+<nav style="background-color:#1a0033;height:70px;margin:0px;padding:0px;">
+    <ul>
+    <h3>
+      
+       <li><p>BLOGGUM</p></li>
+       <li style="float:right; height:30px; width:30px; " class="h";><img style="width:100%;height:100%;border-radius: 50%;" src="b.jpg"></li>
+       <li style="float:right; height:30px; width:30px; " class="h";><img style="width:100%;height:100%;border-radius: 50%;" src="c.jpg"></li>
+       <li style="float:right; height:30px; width:30px; " class="h";><img style="width:100%;height:100%;border-radius: 50%;" src="d.jpg"></li>
+   </h3>
+</ul>
+</nav>
+<div style="background-color: #66afcc;height:45px;margin:0px;padding:0px;vertical-align:top;">
+<ul>
+ <li style=" height:30px; width:30px;"><img style="width:100%;height:100%;border-radius: 90%;" src="a.jpg"></li>
+<li><p style="cursor:pointer;">Home</p></li>
+<li><p><a href="./title.html">Contents</a></p></li>
+<li><p><a href="./index.html">About</a></p></li>
+		<li style="float:right" class="h";><img style="width:30px;height:30px;border-radius: 50%;"src="e.jpg"></li>
+	</ul>
+</div>
+
+<div>
+	<form>
+	
+	<input type="textbox" id="search" class="move" style="padding:10px;color:black;vertical-align: center;cursor: auto;opacity:20%;">
+	<button class="move2" style="background-color:#ccfff2 ;">
+				<h3>submit</h3>
+	</button>
+</form>
+</div>
+</main>
+<div class="intro">
+  <div class="intro-text">
+	<h1 class="hide"><span class="text">GET SET</span><h1>
+	<h1 class="hide"><span class="text">BLOG</span><h1>
+
+</div>
+</div>
+<div class=slider></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+<script>
+const t2 = gsap.timeline({defaults:{ease:'power1.out'}});
+t2.to('.text',{y:"0%",duration: 1,stagger:0.25 });
+t2.to('.slider',{y:"100%",duration:1.5,delay:0.5});
+t2.to('.intro',{x:"100%",duration: 1},"-=1");
+t2.fromTo('li',{opacity:0},{opacity:1, duration:1},"+=0.10");
+	
+</script>
+
+
+</body>
+
+</html>
+

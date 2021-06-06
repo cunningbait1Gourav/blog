@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<style>
+
+			   .h
+	{
+	display:none;
+	}
+   
+  main ul
+   {
+   margin:0px;
+   padding:0px;
+   }
+   
+  main ul li
+   {
+   display:inline-block;
+   list-style:none;
+   padding:10px;
+   vertical-allign:top;
+   height:16px;
+   
+   }
+   main a
+   {
+   color:#ccfff2;
+   }
+   main h1
+{
+font-size:1rem;
+}
+main h2
+{
+font-size:0.75rem;
+}
+*{
+color:white;
+margin:0px;
+padding:0px;
+
+}
+#g
+{
+  width:100%;
+}
+@media screen and (min-width:500px)
+{
+.h
+{
+display:inline-block;
+vertical-align:top;
+}
+main h1
+{
+font-size:2rem;
+font-weight:bold;
+}
+main h2
+{
+font-size:1.75rem;
+font-weight:bold;
+text-align:center;
+}
+#g{
+  width:800px;
+  height:900px;
+  transform:translateX(30%);
+}
+input
+{
+  width:300px;
+  height:50px;
+  margin-top:50px;
+  padding:5px;
+  border-color-top:#fff; 
+  color:#000;
+}
+button
+{
+  width:70px;
+  height:50px;
+  margin-top:50px;
+  background: linear-gradient(to right,#33ccff 0%,#000099 100%);
+  border-radius:25px;
+  font-family: "Lobster",cursive;
+
+}
+#input5
+{
+   width:300px;
+  height:300px;
+  margin-top:50px;
+  padding:5px;
+  border-color-top:#fff; 
+}
+}
+
+
+
+	</style>
+	 
+</head>
+<body style="background-color: #000">
+	<main>
+			<nav style="background-color:#1a0033;height:70px;margin:0px;padding:0px;width:100%">
+    <ul>
+    <h3>
+      
+       <li><p>cosmos</p></li>
+       <li class="h";><p>stellar world</p></li>
+       <li class="h";><p>black holes</p></li>
+       <li style="float:right; height:30px; width:30px; " class="h";><img style="width:100%;height:100%;border-radius: 50%;" src="b.jpg"></li>
+       <li style="float:right; height:30px; width:30px; " class="h";><img style="width:100%;height:100%;border-radius: 50%;" src="c.jpg"></li>
+       <li style="float:right; height:30px; width:30px; " class="h";><img style="width:100%;height:100%;border-radius: 50%;" src="d.jpg"></li>
+   </h3>
+</ul>
+</nav>
+<div style="background-color: #66afcc;height:45px;margin:0px;padding:0px;vertical-align:top;">
+<ul>
+ <li style=" height:30px; width:30px;"><img style="width:100%;height:100%;border-radius: 90%;" src="a.jpg"></li>
+<li><p><a href="./home.html">Home</a></p></li>
+<li><p>Contents</p></li>
+<li><p><a href="./index.html">About</a></p></li>
+<li style="float:right" class="h";><img style="width:30px;height:30px;border-radius: 50%;"src="e.jpg"></li>
+</ul>
+</div>
+<div >
+<h1 style="text-align: center;margin-top:20px;font-family:'Lobster',cursive;">
+	Get a blog designed by us
+</h1>
+
+<form>
+<h2 style="margin-top: 40px">
+	ENTER YOUR DETAILS
+</h2>
+
+<div style="display: inline-flex;flex-wrap:wrap;justify-content: space-evenly;margin:20px;background-color:#fff;" id="g">
+<input type="textbox" placeholder="name" id="input1" >
+<input type="textbox" id="input2" placeholder="age">
+<input type="textbox" id="input3" placeholder="topic of blog">
+<input type="textbox" id="input4" placeholder="related information">
+<input type="textbox" id="input5" placeholder="elaboration">
+<input type="textbox" id="input6" placeholder="image1">
+<input type="textbox" id="input7" placeholder="bio">
+<input type="textbox" id="input8" placeholder="image2">
+<input type="textbox" id="input9" placeholder="image3">
+<button>submit</button>
+</div>
+
+
+</form>
+</div>
+	</main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+<script>
+const t1 = gsap.timeline({defaults:{ease:'power1.out'}});
+t1.fromTo('div',{opacity:0},{opacity:1, duration:2},"+=0.10");
+
+</script>
+</html>
